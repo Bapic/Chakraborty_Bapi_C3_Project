@@ -9,7 +9,7 @@ public class RestaurantService {
 
         //DELETE ABOVE STATEMENT AND WRITE CODE HERE
         for (Restaurant restaurant: restaurants) {
-            if (restaurant.getName().e(restaurantName))
+            if (restaurant.getName().equals(restaurantName))
                 return restaurant;
         }
         throw new restaurantNotFoundException("The name searched could not be found. Please try again");
